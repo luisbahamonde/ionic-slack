@@ -12,7 +12,12 @@ angular.module('starter.controllers', [])
 
 
   });
-  
+
+  $scope.preventFocus = function () {
+
+    ionic.DomUtil.blurAll();
+    
+  }
 
 })
 

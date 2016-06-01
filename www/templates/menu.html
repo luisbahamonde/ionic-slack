@@ -5,7 +5,7 @@
       </ion-nav-back-button>
 
       <ion-nav-buttons side="left">
-        <button class="button slack-button" menu-toggle="left"></button>
+        <button class="button slack-button" menu-toggle="left" ng-click="preventFocus()"></button>
       </ion-nav-buttons>
 
       <ion-nav-buttons side="right">
@@ -17,8 +17,9 @@
   </ion-side-menu-content>
 
 
-  <ion-side-menu watch-menu side="left" class="slack-menu-left" width="305">
+  <ion-side-menu watch-menu side="left" class="slack-menu-left" width="320">
     <ion-header-bar class="item-input-inset">
+      <img src="img/slack.png" alt="">
       <label class="item-input-wrapper">
         <i class="icon ion-ios-search placeholder-icon"></i>
         <input type="search" placeholder="Jump to conversation...">
