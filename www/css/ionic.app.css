@@ -9876,10 +9876,20 @@ a.button {
     color: rgba(255, 255, 255, 0.35) !important; }
 
 /*
+    BUTTONS
+*/
+.slack-button {
+  border: none;
+  background: url(/img/slack.png) no-repeat center center;
+  background-size: 28px;
+  width: 42px; }
+
+/*
     BARS
 */
 .slack-bar .title.title-left.header-item {
-  font-weight: 800; }
+  font-weight: 800;
+  left: 48px !important; }
   .slack-bar .title.title-left.header-item .icon {
     color: rgba(0, 0, 0, 0.25);
     font-size: 13px;
