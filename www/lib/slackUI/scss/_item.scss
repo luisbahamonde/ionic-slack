@@ -75,6 +75,8 @@
 
   p{
     font-weight: normal;
+    text-overflow: clip !important;
+    white-space: normal !important;
   }
 
 }

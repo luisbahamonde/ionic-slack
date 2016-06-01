@@ -30,7 +30,13 @@ angular.module('starter.controllers', [])
   $scope.messages = [
     {id: 1, user: 'Luis Bahamonde', avatar:'img/avatar1.gif', date:'10:43 AM', text:'hello world!' }
   ];
-  
+
+  $scope.ajustarScroll = function () {
+
+    $ionicScrollDelegate.resize();
+    $ionicScrollDelegate.scrollBottom(true);
+
+  }
   
   $scope.sendMessage = function (message) {
     $scope.messages.push({user: 'Luis Bahamonde', avatar:'img/avatar1.gif', date:'10:43 AM', text:message.text});

@@ -9941,7 +9941,9 @@ a.button {
       font-weight: normal;
       color: #ccc; }
   .slack-item-message p {
-    font-weight: normal; }
+    font-weight: normal;
+    text-overflow: clip !important;
+    white-space: normal !important; }
 
 /*
     BARS

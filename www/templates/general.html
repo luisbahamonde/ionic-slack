@@ -25,7 +25,7 @@
   <div keyboard-attach class="bar bar-footer bar-stable item-input-inset slack-menssage-bar">
     <i class="icon ion-ios-plus-outline"></i>
     <label class="item-input-wrapper">
-      <input type="text" placeholder="Message" ng-model="message.text">
+      <input type="text" placeholder="Message"ng-focus="ajustarScroll()" ng-blur="ajustarScroll()" ng-model="message.text">
     </label>
     <div ng-class="{ocultar:!message.text}" ng-click="sendMessage(message)" class="button button-clear button-positive">
       Send
