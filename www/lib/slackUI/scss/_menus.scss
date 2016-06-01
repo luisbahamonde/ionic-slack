@@ -1,0 +1,111 @@
+/*
+    MENUS
+*/
+
+
+.slack-menu-left{
+
+  &.menu.menu-left{
+
+    background: $royal;
+
+    .scroll-content {
+
+    }
+
+    .bar.bar-header{
+
+      background: rgba(0,0,0,.16);
+
+      &.item-input-inset{
+
+        padding-top: 0px !important;
+
+        .item-input-wrapper{
+          background: rgba(0, 0, 0, .2);
+
+          i.icon.placeholder-icon{
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.4);
+          }
+
+          input{
+            color: #fff;
+            height: 28px !important;
+            padding-left: 0px;
+            padding-top: 0px;
+            font-size: 12px;
+          }
+
+          input::-webkit-input-placeholder{
+            color: rgba(255, 255, 255, 0.4);
+          }
+
+        }
+      }
+    }
+
+    .list {
+      background: transparent !important;
+      padding-left: 6px;
+      padding-right: 6px;
+
+      &:last-child{
+        margin-bottom: 10px;
+      }
+
+      .item{
+        padding-left: 10px;
+        background: transparent !important;
+        border: none !important;
+        color: rgba(255,255,255,.8);
+
+        &.item-channel {
+          padding: 8px 10px 8px 15px;
+          
+          &.active{
+            color: rgba(255,255,255,1);
+            background: $balanced !important;
+            border-radius: 6px;
+          }
+
+          i.icon {
+            font-size: 14px;
+            padding-right: 3px;
+            color: rgba(255,255,255,.6);
+
+            &.icon-status-off{
+
+              font-size: 14px;
+              color: rgba(255,255,255,.2);
+            }
+
+            &.icon-status-on{
+
+              font-size: 14px;
+              color: $balanced;
+            }
+          }
+
+        }
+
+        &.item-divider{
+          text-transform: uppercase;
+          font-size: 10px !important;
+          color: rgba(255,255,255,.35) !important;
+        }
+      }
+    }
+
+    .item.item-divider{
+
+      background: $royal !important;
+      border: none !important;
+      text-transform: uppercase;
+      font-size: 10px !important;
+      color: rgba(255,255,255,.35) !important;
+    }
+
+  }
+
+}
