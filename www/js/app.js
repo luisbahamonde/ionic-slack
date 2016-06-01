@@ -22,7 +22,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-affix'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+
+
+  //$ionicConfigProvider.backButton.icon(value);
+  //$ionicConfigProvider.backButton.text(value);
+  $ionicConfigProvider.spinner.icon('dots');
+  $ionicConfigProvider.navBar.alignTitle('left');
+
   $stateProvider
 
     .state('app', {

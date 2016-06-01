@@ -9874,3 +9874,13 @@ a.button {
     text-transform: uppercase;
     font-size: 10px !important;
     color: rgba(255, 255, 255, 0.35) !important; }
+
+/*
+    BARS
+*/
+.slack-bar .title.title-left.header-item {
+  font-weight: 800; }
+  .slack-bar .title.title-left.header-item .icon {
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 13px;
+    padding-left: 4px; }
