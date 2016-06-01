@@ -16,13 +16,18 @@ angular.module('starter.controllers', [])
   $scope.preventFocus = function () {
 
     ionic.DomUtil.blurAll();
-    
+
   }
 
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
+.controller('GeneralController', function($scope) {
+
+  $scope.message = {
+    text:''
+  };
+
+  $scope.messages = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
     { title: 'Dubstep', id: 3 },
@@ -30,6 +35,12 @@ angular.module('starter.controllers', [])
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 }
   ];
+  
+  
+  $scope.sendMessage = function (message) {
+    $scope.message.text = '';
+  }
+  
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {

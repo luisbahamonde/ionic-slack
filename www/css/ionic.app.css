@@ -9894,9 +9894,43 @@ a.button {
     BARS
 */
 .slack-bar .title.title-left.header-item {
-  font-weight: 800;
+  font-weight: bold;
   left: 48px !important; }
   .slack-bar .title.title-left.header-item .icon {
     color: rgba(0, 0, 0, 0.25);
     font-size: 13px;
     padding-left: 4px; }
+
+.slack-bar .right-buttons .button.button-icon.button-clear {
+  margin-left: 4px;
+  margin-right: 7px; }
+  .slack-bar .right-buttons .button.button-icon.button-clear::before {
+    font-size: 25px !important; }
+
+.slack-menssage-bar {
+  background-image: linear-gradient(0deg, #737373, #FFFFFF 50%, transparent 50%) !important; }
+  .slack-menssage-bar .icon {
+    font-size: 26px;
+    margin-right: 8px;
+    color: rgba(0, 0, 0, 0.4); }
+  .slack-menssage-bar .item-input-wrapper {
+    background: #fff;
+    border: 1px solid #eee;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+    .slack-menssage-bar .item-input-wrapper input::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.3) !important; }
+  .slack-menssage-bar .button {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    padding: 0px;
+    font-weight: bold !important;
+    margin-left: 4px;
+    margin-right: -5px;
+    font-size: 13px; }
+    .slack-menssage-bar .button.ocultar {
+      display: none; }
