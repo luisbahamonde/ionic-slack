@@ -9891,6 +9891,59 @@ a.button {
   width: 42px; }
 
 /*
+    ITEMS
+*/
+.slack-item-welcome {
+  height: 340px;
+  border: none;
+  border-bottom: 2px solid #DEDEDE;
+  background: url("../img/slack-bg.jpg") no-repeat center center; }
+  .slack-item-welcome h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #464646; }
+  .slack-item-welcome p {
+    font-weight: 200;
+    font-size: 16.5px; }
+  .slack-item-welcome div.whiter {
+    background: rgba(255, 255, 255, 0.96);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+    .slack-item-welcome div.whiter div.float {
+      padding: 24px 36px 24px 24px;
+      position: absolute;
+      bottom: 0px; }
+
+.slack-item-message {
+  border: none;
+  text-overflow: clip !important;
+  white-space: normal !important; }
+  .slack-item-message:last-child {
+    margin-bottom: 50px; }
+  .slack-item-message img {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    max-width: 34px;
+    max-height: 34px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; }
+  .slack-item-message h2, .slack-item-message h1, .slack-item-message p {
+    margin: 0 0 0 48px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000; }
+    .slack-item-message h2 span, .slack-item-message h1 span, .slack-item-message p span {
+      font-weight: normal;
+      color: #ccc; }
+  .slack-item-message p {
+    font-weight: normal; }
+
+/*
     BARS
 */
 .slack-bar .title.title-left.header-item {

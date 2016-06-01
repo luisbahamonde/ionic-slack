@@ -4,6 +4,21 @@
   <ion-content>
     <ion-list>
 
+      <ion-item class="item-text-wrap slack-item-welcome">
+        <div class="whiter">
+          <div class="float">
+            <h2>Welcome!</h2>
+            <p>This is the very beginning of the <strong>#general</strong> channel, which you created on May 26, 2016.</p>
+          </div>
+        </div>
+      </ion-item>
+
+      <ion-item ng-repeat="message in messages" class="slack-item-message">
+          <img src="{{message.avatar}}" alt="avatar">
+          <h2>{{message.user}} <span>{{message.date}}</span></h2>
+          <p>{{message.text}}</p>
+      </ion-item>
+
     </ion-list>
   </ion-content>
 
@@ -12,9 +27,9 @@
     <label class="item-input-wrapper">
       <input type="text" placeholder="Message" ng-model="message.text">
     </label>
-    <button ng-class="{ocultar:!message.text}" ng-click="sendMessage(message)" class="button button-clear button-positive">
+    <div ng-class="{ocultar:!message.text}" ng-click="sendMessage(message)" class="button button-clear button-positive">
       Send
-    </button>
+    </div>
 
   </div>
 

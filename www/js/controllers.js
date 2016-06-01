@@ -21,24 +21,21 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('GeneralController', function($scope) {
+.controller('GeneralController', function($scope, $ionicScrollDelegate) {
 
   $scope.message = {
     text:''
   };
 
   $scope.messages = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    {id: 1, user: 'Luis Bahamonde', avatar:'img/avatar1.gif', date:'10:43 AM', text:'hello world!' }
   ];
   
   
   $scope.sendMessage = function (message) {
+    $scope.messages.push({user: 'Luis Bahamonde', avatar:'img/avatar1.gif', date:'10:43 AM', text:message.text});
     $scope.message.text = '';
+    $ionicScrollDelegate.scrollBottom(true);
   }
   
 })
