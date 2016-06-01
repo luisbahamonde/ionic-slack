@@ -9880,7 +9880,7 @@ a.button {
 */
 .slack-button {
   border: none;
-  background: url(/img/slack.png) no-repeat center center;
+  background: url("/img/slack.png") no-repeat center center;
   background-size: 28px;
   width: 42px; }
 
