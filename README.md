@@ -2,7 +2,9 @@
 
 Ionic Slack user interface theme!
 
-![alt tag](https://s3.amazonaws.com/ionic-marketplace/ionic-slack-ui-theme-free/screenshot_4.gif)
+<img src="https://s3.amazonaws.com/ionic-marketplace/ionic-slack-ui-theme-free/screenshot_4.gif" width="200">
+<img src="https://s3.amazonaws.com/ionic-marketplace/ionic-slack-ui-theme-free/screenshot_1.jpeg" width="200">
+<img src="https://s3.amazonaws.com/ionic-marketplace/ionic-slack-ui-theme-free/screenshot_2.jpeg" width="200">
 
 ## Cordova plugins
 * ionic-plugin-keyboard
