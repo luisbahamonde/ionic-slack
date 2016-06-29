@@ -13,7 +13,7 @@ angular.module('starter.directives', [])
                         },
                         function(ratio) {
                             $scope.data=ratio;
-                            if( ratio > 0.5){
+                            if( ratio > 0.5 || ratio < -0.5){
 
                                 StatusBar.hide();
                                 ionic.DomUtil.blurAll();
